@@ -4,11 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>tripleo.elijah</groupId>
-		<artifactId>elijah-prolific-remnant</artifactId>
-		<version>0.2-prolific-remnant</version>
-	</parent>
+	<!--<parent>-->
+	<!--	<groupId>tripleo.elijah</groupId>-->
+		<!--<artifactId>elijah-prolific-remnant</artifactId>-->
+		<!--<version>0.2-prolific-remnant</version>-->
+	<!--</parent>-->
 
 	<groupId>tripleo.elijah</groupId>
 	<artifactId>elijah-prolific-remnant-loadable</artifactId>
@@ -17,8 +17,6 @@
 	<properties>
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
-
-		<downloadSources>true</downloadSources>
 
 		<guava.version>33.5.0-jre</guava.version>
 		<!--
@@ -29,21 +27,23 @@
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>com.github.elijah-tng</groupId>
-			<artifactId>radical-paradox-annot</artifactId>
-			<version>b68fbe821536deb294d0d28b75e4e73a19f9d0ff</version>
-		</dependency>
+		<!--<dependency>-->
+		<!--	<groupId>com.github.elijah-tng</groupId>-->
+		<!--	<artifactId>radical-paradox-annot</artifactId>-->
+		<!--	<version>b68fbe821536deb294d0d28b75e4e73a19f9d0ff</version>-->
+		<!--</dependency>-->
 		<dependency>
 			<groupId>com.github.elijah-tng</groupId>
 			<artifactId>cegont-upper</artifactId>
 			<version>dc1063667e640230540167d9eb9e0ec562c26d8f</version>
 		</dependency>
+		<!--
 		<dependency>
 			<groupId>com.github.elijah-tng</groupId>
 			<artifactId>radical-paradox-mal</artifactId>
-			<!--			<version>2a8597dafe</version>-->
+			&lt;!&ndash;			<version>2a8597dafe</version>&ndash;&gt;
 		</dependency>
+		-->
 
 
 		<!--
