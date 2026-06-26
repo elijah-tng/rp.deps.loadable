@@ -6,3 +6,7 @@
 !codeStyles
 !.name
 workspace.xml
+/misc.xml
+/modules.xml
+/rp.deps.loadable.iml
+/vcs.xml
