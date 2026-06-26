@@ -10,3 +10,5 @@ workspace.xml
 /modules.xml
 /rp.deps.loadable.iml
 /vcs.xml
+/compiler.xml
+/jarRepositories.xml
