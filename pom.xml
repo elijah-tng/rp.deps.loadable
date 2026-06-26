@@ -370,14 +370,6 @@
 		</profile>
 		<!--
 		<profile>
-		<id>rewrite</id> &lt;!&ndash; This should squiggly when 2 ids are the same&ndash;&gt;
-		<activation>
-		<activeByDefault>true</activeByDefault>
-		</activation>
-		</profile>
-		-->
-		<!--
-		<profile>
 		<id>roaster</id>
 		<activation>
 		<activeByDefault>true</activeByDefault>
@@ -409,74 +401,6 @@
 		</dependencies>
 		</profile>
 		-->
-		<!--
-	<profile>
-	<id>site</id>
-	<reporting>
-	<plugins>
-	<plugin>
-	<groupId>org.apache.maven.plugins</groupId>
-	<artifactId>maven-jxr-plugin</artifactId>
-	<version>3.6.0</version>
-	</plugin>
-	</plugins>
-	</reporting>
-	</profile>
-	-->
-		<profile>
-			<id>rewrite</id> <!-- This should squiggly when 2 ids are the same-->
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.openrewrite.maven</groupId>
-						<artifactId>rewrite-maven-plugin</artifactId>
-						<version>6.29.0</version>
-						<configuration>
-							<activeRecipes>
-								<recipe>org.openrewrite.staticanalysis.CodeCleanup</recipe>
-							</activeRecipes>
-							<checkstyleConfigFile>checkstyle.xml</checkstyleConfigFile>
-						</configuration>
-						<executions>
-							<execution>
-								<id>validate</id>
-								<phase>validate</phase>
-								<goals>
-									<goal>run</goal>
-								</goals>
-							</execution>
-						</executions>
-						<dependencies>
-							<dependency>
-								<groupId>org.openrewrite.recipe</groupId>
-								<artifactId>rewrite-static-analysis</artifactId>
-								<version>2.27.0</version>
-							</dependency>
-						</dependencies>
-					</plugin>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-checkstyle-plugin</artifactId>
-						<version>3.4.0</version>
-						<configuration>
-							<configLocation>checkstyle.xml</configLocation>
-						</configuration>
-						<executions>
-							<execution>
-								<id>validate</id>
-								<phase>validate</phase>
-								<goals>
-									<goal>check</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
 		<!--
 		<profile>
 		<id>roaster</id>
